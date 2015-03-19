@@ -1,0 +1,62 @@
+@import "_settings.global.scss";
+@import "_tools.utilities.scss";
+
+/**
+ * Main containers 100% height and BG
+**/
+html, body,
+.container{
+	min-height: 100%;
+	background: $light;
+}
+
+/**
+ * Padding top for the main container so the fixed header does not overlaps
+**/
+.container {
+	width: 100%;
+	padding-top: 80px;
+}
+
+/**
+ * Maintains everything at the same widht
+**/
+.wrapper{
+	width: 90%; max-width: 1280px; min-width: 300px;
+	margin-right: auto; margin-left: auto;
+}
+
+/**
+ * Column wrapper for clearfix and floats
+ * when the columns inside need gutter
+**/
+.row{
+	@include clearfix;
+	margin-left: -5px; margin-right: -5px;
+}
+
+/**
+ * Column wrapper for clearfix and floats
+ * when the columns inside do not need gutter
+**/
+.clearfix{
+	@include clearfix;
+}
+
+
+/*------------------------------------*\
+    #POSITIONS
+\*------------------------------------*/
+.relative{ position: relative !important; }
+.absolute{ position: absolute !important; }
+
+
+
+
+
+
+
+
+
+
+

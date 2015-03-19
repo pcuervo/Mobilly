@@ -1,0 +1,63 @@
+@import "_settings.global.scss";
+@import "_tools.utilities.scss";
+
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+.button{
+    padding: 8px 8px 6px 8px;
+    @include font; text-align: center; text-transform: uppercase; text-decoration: none; color: $light;
+}
+
+
+
+
+/*------------------------------------*\
+    #STYLES
+\*------------------------------------*/
+.button--hollow{
+    border: 3px solid $light;
+    background: transparent;
+}
+
+
+.button__share{ padding: $unidad ($unidad/4); }
+.button__share i{ font-size: 16px; }
+.button__share span {
+    @include font; text-overflow: ellipsis; //text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+
+/*------------------------------------*\
+    #SIZES
+\*------------------------------------*/
+.button--small{
+    padding: 6px 6px 4px 6px; border-width: 2px;
+    @include font;
+}
+
+.button--large{
+    padding: 10px 10px 8px 10px;
+    @include font; letter-spacing: 1px;
+}
+
+
+
+
+/*------------------------------------*\
+    #COLORES
+\*------------------------------------*/
+.button--hollow.button--dark{
+    border-color: $dark;
+    color: $dark;
+    background: none;
+}
+
+.button--dark{
+    background: $dark;
+    color: $light;
+}

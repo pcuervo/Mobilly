@@ -1,0 +1,26 @@
+@import "_settings.global.scss";
+@import "_tools.utilities.scss";
+
+/**
+ * Selections
+**/
+::selection{ background: $highlight; color: $light; }
+::-moz-selection { background: $highlight; color: $light; }
+
+
+/**
+ * Box sizing
+**/
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/**
+ * Scroll tuning for ios deviced
+**/
+// .container{
+// 	-webkit-overflow-scrolling: touch;
+// }
