@@ -46,7 +46,7 @@ gem 'spree', git: 'https://github.com/spree/spree.git', branch: '2-4-stable'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-4-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-4-stable'
 
-gem 'spree_dame_flores_theme', :path => 'spree_dame_flores_theme'
+gem 'spree_mobbily_theme', :path => 'spree_mobbily_theme'
 gem 'spree_i18n', github: 'spree-contrib/spree_i18n', branch: '2-4-stable'
 
 gem 'spree_add_to_cart_ajax', github: 'nathandao/spree_add_to_cart_ajax', branch: '2-4-stable'

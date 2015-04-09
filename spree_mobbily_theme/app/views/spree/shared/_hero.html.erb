@@ -1,0 +1,4 @@
+<% if @occasion_types %>
+	<%= label_tag "occasion", "Tipo de ocasión" %>
+	<%= collection_select( :occasion, :id, @occasion_types, :id, :name, { :prompt => 'Selecciona la ocasión'} ) %>
+<% end %>

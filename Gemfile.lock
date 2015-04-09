@@ -118,9 +118,9 @@ GIT
       spree_core (= 2.4.3.beta)
 
 PATH
-  remote: spree_dame_flores_theme
+  remote: spree_mobbily_theme
   specs:
-    spree_dame_flores_theme (2.4.3.beta)
+    spree_mobbily_theme (2.4.3.beta)
       spree_core (~> 2.4.3.beta)
 
 GEM
@@ -399,9 +399,9 @@ DEPENDENCIES
   spree_add_to_cart_ajax!
   spree_auth_devise!
   spree_conekta!
-  spree_dame_flores_theme!
   spree_gateway!
   spree_i18n!
+  spree_mobbily_theme!
   spree_paypal_express!
   spring
   turbolinks

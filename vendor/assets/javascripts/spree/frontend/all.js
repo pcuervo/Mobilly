@@ -9,7 +9,7 @@
 //= require spree/frontend
 
 //= require_tree .
-//= require spree/dame_flores
+//= require spree/mobbily
 //= require spree/frontend/spree_i18n
 //= require spree/frontend/spree_paypal_express
 
