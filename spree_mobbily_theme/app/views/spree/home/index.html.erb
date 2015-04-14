@@ -1,11 +1,65 @@
-<section class="[ filtros ]">
-	<%= render partial: 'spree/shared/filters' %>
-</section><!-- filtros -->
+<section class="[ heroes ]">
+	<%= render partial: 'spree/shared/hero' %>
+</section><!-- heroes -->
+
+<section class="[ call-to-action ]">
+	<h3 class="[ text-center ]">¡Invita a tus amigos y gana dinero!</h3>
+	<a href="" class="[ button ]">Invitar amigos</a>
+</section>
 
 <% if @products %>
 	<section class="[ featured-products ]">
+		<h3 class="[ text-center ]">Nuestra selección</h3>
 		<% @products.each do |product| %>
-			<%= render 'product', :product => product %>
+			<%#= render 'product', :product => product %>
+			<div class="[ square ][ border ][ columna xmall-6 ]">
+				<img src="images" alt="" class="[ thumbnail ]">
+				<h4 class="[ text-center ]">Nombre del producto</h4>
+				<p class="[ text-center ]">de <a href="#">Paul</a></p>
+				<p class="[ text-center ][  ]">$1,100</p>
+				<a class="[ button button--small button--hollow ]">
+					agregar al carrito
+				</a>
+				<a class="[ button button--small button--highlight ]">
+					1-click checkout
+				</a>
+			</div>
+		<% end %>
+	</section>
+<% end %>
+
+<section class="[ call-to-action ]">
+	<h3 class="[ text-center ]">Vende tus muebles</h3>
+	<div class="[ square ][ border ][ columna xmall-6 ]">
+		<img src="images" alt="" class="[ thumbnail ][ block center ]">
+		<h4 class="[ text-center ]">Adam Smith</h4>
+		<p class="[ text-center ][ color-highlight ]">Top Seller</p>
+	</div>
+	<div class="[ square ][ border ][ columna xmall-6 ][ text-center ]" style="backgound-image: url('imagen')">
+		<h3 class="[ text-center ]">Comienza a Vender</h3>
+		<a class="[ button button--small ]">
+			agregar al carrito
+		</a>
+	</div>
+</section>
+
+<% if @products %>
+	<section class="[ featured-products ]">
+		<h3 class="[ text-center ]">Sillónes</h3>
+		<% @products.each do |product| %>
+			<%#= render 'product', :product => product %>
+			<div class="[ square ][ border ][ columna xmall-6 ]">
+				<img src="images" alt="" class="[ thumbnail ]">
+				<h4 class="[ text-center ]">Nombre del producto</h4>
+				<p class="[ text-center ]">de <a href="#">Paul</a></p>
+				<p class="[ text-center ][  ]">$1,100</p>
+				<a class="[ button button--small button--hollow ]">
+					agregar al carrito
+				</a>
+				<a class="[ button button--small button--highlight ]">
+					1-click checkout
+				</a>
+			</div>
 		<% end %>
 	</section>
 <% end %>
