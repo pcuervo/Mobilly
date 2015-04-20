@@ -1,16 +1,74 @@
-@import "_settings.global.scss";
-@import "_tools.utilities.scss";
-
 /**
  * Colors
 **/
-.light{ color: $light; }
-.highlight{ color: $highlight; }
-.dark{ color: $dark; }
+.color-light{
+	color: $light !important;
+}
+.color-primary{
+	color: $primary !important;
+}
+.color-highlight{
+	color: $highlight !important;
+}
+.color-dark{
+	color: $dark !important;
+}
+.color-grey{
+	color: $grey !important;
+}
+
+.color-danger{
+	color: $danger !important;
+}
+
 
 /**
  * Backgrounds
 **/
-.bg-light{ background-color: $light; }
-.bg-highlight{ background-color: $highlight; }
-.bg-dark{ background-color: $dark; }
+.bg-light{
+	background-color: $light !important;
+	color: $dark !important;
+}
+.bg-light-hover{
+	background-color: darken($light, 10%) !important;
+}
+
+.bg-primary{
+	background-color: $primary !important;
+	color: $light !important;
+}
+.bg-primary-hover{
+	background-color: darken($primary, 10%) !important;
+}
+
+.bg-highlight{
+	background-color: $highlight !important;
+	color: $light !important;
+}
+.bg-highlight-hover{
+	background-color: darken($highlight, 10%) !important;
+}
+
+.bg-dark{
+	background-color: $dark !important;
+	color: $light !important;
+}
+.bg-dark-hover{
+	background-color: darken($dark, 10%) !important;
+}
+
+.bg-grey{
+	background-color: $grey !important;
+	color: $light !important;
+}
+.bg-grey-hover{
+	background-color: darken($grey, 10%) !important;
+}
+
+.bg-danger{
+	background-color: $danger !important;
+	color: $light !important;
+}
+.bg-danger-hover{
+	background-color: darken($danger, 10%) !important;
+}

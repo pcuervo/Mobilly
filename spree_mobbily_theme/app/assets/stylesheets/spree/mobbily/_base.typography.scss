@@ -22,47 +22,47 @@
 /**
  * HTML general elements
 **/
-body{ font-family: 'lato'; color: $dark; }
+body{
+	font-family: 'Roboto', sans-serif;
+	color: $dark;
+}
 
 /**
  * Headers
 **/
 h1, h2, h3, h4, h5, h6{
 	margin-top: 0;
-	//font-family: '';
 }
 
-/**
- * Titles, subtitles
-**/
-.title{
-
-}
-.sub-title{
-
+h2{
+	@include font( 30px, 1, 600, 'proxima-nova' );
 }
 
-.bg-image .title, .bg-image .sub-title{ color: $light; }
-.bg-image .title{
-	width: 100%;
-	text-align: center;
+h3{
+	@include font( 25px, 1, 600, 'proxima-nova' );
+}
+
+h4{
+	@include font( 14px, 1, 600, 'proxima-nova' );
+}
+
+h5{
+	@include font( 12px, 1, 400, 'Roboto' );
+	color: $medium;
+}
+
+h6{
+	@include font( 12px, 1, 600, 'proxima-nova' );
 }
 
 /**
  * Content
 **/
 p{
-	margin: 0 0 1em 0;
-	@include font;
+	padding: 0; margin: 0 0 1em 0;
+	@include font( 16px, 22px, 400, 'Roboto' );
 }
 
-
-/**
- * Image captions
-**/
-.image-caption{
-	//.font( 18px, 28px, normal, 'font-name' ); color: $light-dark;
-}
 
 
 

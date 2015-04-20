@@ -1,63 +1,76 @@
-@import "_settings.global.scss";
-@import "_tools.utilities.scss";
-
 /*------------------------------------*\
-    #BUTTONS
+	#BUTTONS
 \*------------------------------------*/
-.button{
-    padding: 8px 8px 6px 8px;
-    @include font; text-align: center; text-transform: uppercase; text-decoration: none; color: $light;
+a.button, button.button{
+	display: inline-block;
+	padding: 8px 20px 8px 20px; border: none; margin: 0;
+	@include font( 14px, 20px, 400, 'Roboto' ); text-align: center; text-transform: lowercase; text-decoration: none; color: $light;
+	background: $grey;
+	@include border-radius(20px);
 }
 
 
 
-
 /*------------------------------------*\
-    #STYLES
+	#COLORS
 \*------------------------------------*/
-.button--hollow{
-    border: 3px solid $light;
-    background: transparent;
+a.button--primary, button.button--primary{
+	background: $primary;
+}
+
+a.button--highlight, button.button--highlight{
+	background: $highlight;
 }
 
 
-.button__share{ padding: $unidad ($unidad/4); }
-.button__share i{ font-size: 16px; }
-.button__share span {
-    @include font; text-overflow: ellipsis; //text-align: right;
-    white-space: nowrap;
-    overflow: hidden;
+
+/*------------------------------------*\
+	#STYLES
+\*------------------------------------*/
+a.button--ink, button.button--ink{
+	padding: 8px; border: none;
+	@include border-radius(0);
+	background: none;
+}
+
+a.button--hollow, button.button--hollow{
+	border: 1px solid $light;
+	background: transparent;
+}
+
+a.button__action{
+	padding: 12px 7px; @include border-radius(50%);
+	background: $primary;
+	color: $light; font-size: 26px;
 }
 
 
 
 
 /*------------------------------------*\
-    #SIZES
+	#SIZES
 \*------------------------------------*/
 .button--small{
-    padding: 6px 6px 4px 6px; border-width: 2px;
-    @include font;
+	padding: 6px 6px 4px 6px; border-width: 2px;
 }
 
 .button--large{
-    padding: 10px 10px 8px 10px;
-    @include font; letter-spacing: 1px;
+	padding: 10px 10px 8px 10px;
 }
 
 
 
 
 /*------------------------------------*\
-    #COLORES
+	#COLORES
 \*------------------------------------*/
 .button--hollow.button--dark{
-    border-color: $dark;
-    color: $dark;
-    background: none;
+	border-color: $dark;
+	color: $dark;
+	background: none;
 }
 
 .button--dark{
-    background: $dark;
-    color: $light;
+	background: $dark;
+	color: $light;
 }
