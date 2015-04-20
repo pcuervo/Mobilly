@@ -122,6 +122,7 @@ PATH
   specs:
     spree_mobbily_theme (2.4.3.beta)
       spree_core (~> 2.4.3.beta)
+      spree_sample
 
 GEM
   remote: https://rubygems.org/

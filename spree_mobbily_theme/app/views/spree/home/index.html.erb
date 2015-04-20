@@ -11,24 +11,13 @@
 	<a href="" class="[ button ]">Invitar amigos</a>
 </section>
 
-<% if @products %>
-	<section class="[ featured-products ]">
+<% if @products_nuestra_seleccion %>
+	<section class="[ nuestra_seleccion ]">
 		<h3 class="[ text-center ]">Nuestra selección</h3>
-		<% @products.each do |product| %>
-			<%#= render 'product', :product => product %>
-			<div class="[ square ][ border ][ columna xmall-6 ]">
-				<img src="images" alt="" class="[ thumbnail ]">
-				<h4 class="[ text-center ]">Nombre del producto</h4>
-				<p class="[ text-center ]">de <a href="#">Paul</a></p>
-				<p class="[ text-center ][  ]">$1,100</p>
-				<a class="[ button button--small button--hollow ]">
-					agregar al carrito
-				</a>
-				<a class="[ button button--small button--highlight ]">
-					1-click checkout
-				</a>
-			</div>
-		<% end %>
+		<%= render partial: "product", collection: @products_nuestra_seleccion %>
+		<%# @products_nuestra_seleccion.each do |product| %>
+			<%# render 'product', :product => product %>
+		<%# end %>
 	</section>
 <% end %>
 
@@ -39,7 +28,7 @@
 		<h4 class="[ text-center ]">Adam Smith</h4>
 		<p class="[ text-center ][ color-highlight ]">Top Seller</p>
 	</div>
-	<div class="[ square ][ border ][ columna xmall-6 ][ text-center ]" style="backgound-image: url('imagen')">
+	<div class="[ square ][ border ][ columna xmall-6 ][ text-center ]" style="backgound-image: url('#')">
 		<h3 class="[ text-center ]">Comienza a Vender</h3>
 		<a class="[ button button--small ]">
 			agregar al carrito
@@ -47,23 +36,11 @@
 	</div>
 </section>
 
-<% if @products %>
-	<section class="[ featured-products ]">
+<% if @products_sillones %>
+	<section class="[ sillones ]">
 		<h3 class="[ text-center ]">Sillónes</h3>
-		<% @products.each do |product| %>
-			<%#= render 'product', :product => product %>
-			<div class="[ square ][ border ][ columna xmall-6 ]">
-				<img src="images" alt="" class="[ thumbnail ]">
-				<h4 class="[ text-center ]">Nombre del producto</h4>
-				<p class="[ text-center ]">de <a href="#">Paul</a></p>
-				<p class="[ text-center ][  ]">$1,100</p>
-				<a class="[ button button--small button--hollow ]">
-					agregar al carrito
-				</a>
-				<a class="[ button button--small button--highlight ]">
-					1-click checkout
-				</a>
-			</div>
+		<% @products_sillones.each do |product| %>
+			<%= render 'product', :product => product %>
 		<% end %>
 	</section>
 <% end %>
